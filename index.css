@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture{
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1{
+    overflow-wrap: break-word;
+  }
+ 
+  img{
+    height: 283px;
+    width: 283px;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+p{
+    color: rgb(208, 229, 236);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section{
+    background-color: white;
+    max-width: 400px;
+    width: 86%;
+    border-radius: 25px;
+    padding: 20px;
+    max-height: 615px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 500px) {
+    .section{
+       
+        max-width: 400px;
+        width: 70%;
+     }
+
+     img{
+        height: 360px;
+        width: 360px;
+    }
+    
+    h1{
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 18px;
+      }
+}
